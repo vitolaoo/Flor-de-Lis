@@ -5,7 +5,7 @@ body { background-color: #F4E7D6; color: #444; }
 
 header { background-color: rgba(244, 231, 214, 0.95); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #D9CBB0; }
 .header-content { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
-.logo img { height: 60px; }
+.logo img { height: 70px; }
 nav a { text-decoration: none; color: #60151E; margin-left: 20px; font-weight: 500; transition: 0.3s; } 
 nav a:hover { color: #8C222E; }
 .btn-nav-whats { background:#25D366; color:#fff; padding: 8px 16px; border-radius: 4px; display: inline-block; }
