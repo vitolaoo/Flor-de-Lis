@@ -1,4 +1,3 @@
-// ====== CONTROLE DO CARROSSEL (SLIDER) ======
 const track = document.querySelector('.slider-track');
 const slides = document.querySelectorAll('.slide');
 const nextBtn = document.querySelector('.next');
