@@ -9,34 +9,34 @@
    WhatsApp: #25D366
 */
 
-body { background-color: #F4E7D6; color: #444; } /* Fundo Amadeirado Claro */
+body { background-color: #F4E7D6; color: #444; } 
 .container { width: 90%; max-width: 1200px; margin: 0 auto; }
 
 /* Header */
 header { background-color: rgba(244, 231, 214, 0.95); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #D9CBB0; }
 .header-content { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
 .logo img { height: 60px; }
-nav a { text-decoration: none; color: #60151E; margin-left: 20px; font-weight: 500; transition: 0.3s; } /* Vinho */
+nav a { text-decoration: none; color: #60151E; margin-left: 20px; font-weight: 500; transition: 0.3s; } 
 nav a:hover { color: #8C222E; }
-.btn-nav-whats { background:#25D366; color:#fff; padding: 8px 16px; border-radius: 4px; }
+.btn-nav-whats { background:#25D366; color:#fff; padding: 8px 16px; border-radius: 4px; display: inline-block; }
 .btn-nav-whats:hover { background:#20ba59; }
 
 /* Hero Section */
 .hero { padding: 100px 0; text-align: center; }
-.hero h1 { font-size: 3rem; margin-bottom: 10px; color: #60151E; } /* Vinho */
+.hero h1 { font-size: 3rem; margin-bottom: 10px; color: #60151E; } 
 .tagline { font-style: italic; font-size: 1.3rem; color: #60151E; margin-bottom: 20px; }
-.descricao-breve { max-width: 600px; margin: 0 auto 30px; color: #666; }
-.btn-principal { background: #60151E; color: #fff; padding: 14px 28px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 1.1rem; display: inline-block; transition: 0.3s; border: none; } /* Vinho */
+.descricao-breve { max-width: 600px; margin: 0 auto 30px; color: #666; line-height: 1.6; }
+.btn-principal { background: #60151E; color: #fff; padding: 14px 28px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 1.1rem; display: inline-block; transition: 0.3s; border: none; } 
 .btn-principal:hover { background: #8C222E; transform: scale(1.05); }
 
 /* Seção Galeria e Efeito Netflix */
 .secao-galeria { padding: 60px 0; overflow: hidden; background: rgba(244, 231, 214, 0.5); text-align: center; }
-.secao-galeria h2 { margin-bottom: 30px; font-size: 2rem; color: #60151E; } /* Vinho */
+.secao-galeria h2 { margin-bottom: 30px; font-size: 2rem; color: #60151E; } 
 .slider-container { position: relative; width: 100%; max-width: 1000px; margin: 0 auto; overflow: hidden; padding: 10px 0; }
 .slider-track { display: flex; transition: transform 0.5s ease-in-out; width: 100%; }
 .slide { min-width: 45%; padding: 0 10px; box-sizing: border-box; transition: transform 0.3s; }
 
-/* AJUSTADO: Fotos em formato retangular vertical (estilo celular) */
+/* Fotos em formato retangular vertical (estilo celular) */
 .slide img { 
     width: 100%; 
     height: 480px; 
@@ -46,7 +46,7 @@ nav a:hover { color: #8C222E; }
 }
 .slide:hover { transform: scale(1.03); }
 
-/* CORRIGIDO: Botões em círculo perfeito e setas centralizadas */
+/* Botões em círculo perfeito e setas centralizadas */
 .slider-btn { 
     position: absolute; 
     top: 50%; 
@@ -72,21 +72,24 @@ nav a:hover { color: #8C222E; }
 .prev { left: 10px; } .next { right: 10px; }
 
 /* Rodapé Informações de Contato */
-.bg-info-contato { background: #E6DBCF; padding: 60px 0; border-top: 1px solid #D9CBB0; } /* Tom levemente mais escuro que o fundo */
+.bg-info-contato { background: #E6DBCF; padding: 60px 0; border-top: 1px solid #D9CBB0; } 
 .grid-rodape { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-.grid-rodape h3 { margin-bottom: 20px; color: #60151E; } /* Vinho */
+.grid-rodape h3 { margin-bottom: 20px; color: #60151E; } 
 .endereco { margin-bottom: 15px; color: #666; }
 .lista-contatos { list-style: none; }
 .lista-contatos li { margin-bottom: 12px; color: #666; }
 .redes-sociais { margin-top: 20px; }
-.redes-sociais a { color: #60151E; margin-right: 15px; text-decoration: none; font-weight: bold; border-bottom: 1px solid #60151E; padding-bottom: 2px;} /* Vinho */
+.redes-sociais a { color: #60151E; margin-right: 15px; text-decoration: none; font-weight: bold; border-bottom: 1px solid #60151E; padding-bottom: 2px;} 
 
-footer { text-align: center; padding: 20px 0; background: #60151E; color: #E6DBCF; font-size: 0.9rem; } /* Vinho */
+footer { text-align: center; padding: 20px 0; background: #60151E; color: #E6DBCF; font-size: 0.9rem; } 
 
-/* Responsividade Mobile-First */
+/* Responsividade Mobile-First Corrigida */
 @media (max-width: 768px) {
     .grid-rodape { grid-template-columns: 1fr; text-align: center; }
     .slide { min-width: 85%; } 
-    nav { display: none; }
+    
+    nav a { display: none; }
+    nav .btn-nav-whats { display: inline-block; margin-left: 0; padding: 6px 12px; font-size: 0.9rem; }
+    
     .hero h1 { font-size: 2.2rem; }
 }
